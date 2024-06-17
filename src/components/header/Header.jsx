@@ -75,9 +75,9 @@ const navigationHandler = (type) => {
     return (
         <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
             <ContentWrapper>
-              <div className="logo">
-                  <img src={logo} alt=""/>
-              </div>
+            <div className="logo" onClick={() => navigate("/")}>
+                    <img src={logo} alt="" />
+                </div>
               <ul className="menuItems">
                 <li className="menuItem"  onClick={() => navigationHandler("movie")}>Movies</li>
                 <li className="menuItem" onClick={() => navigationHandler("tv")}>TV Shows</li>
